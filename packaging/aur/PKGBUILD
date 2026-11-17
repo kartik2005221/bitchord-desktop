@@ -1,7 +1,7 @@
 # Maintainer: BitChord Desktop Revived contributors
 # Arch/CachyOS package built from BitChord's official Linux .deb release.
 pkgname=bitchord-desktop-revived-bin
-pkgver=1.9.4
+pkgver=1.9.4.1
 pkgrel=1
 pkgdesc='Community-maintained BitChord desktop music player'
 arch=('x86_64')
@@ -22,7 +22,7 @@ _deb="BitChord-${pkgver}-linux-amd64.deb"
 _localdeb="${pkgname}-${pkgver}.deb"
 source=("${_localdeb}::${url}/releases/download/v${pkgver}/${_deb}")
 noextract=("${_localdeb}")
-sha256sums=('22084174fb0eb31dd3c96a2918d5d8f5f4bf8d2e6ec0891bae59379e2ded534f')
+sha256sums=('5679f9322733a777b34c9cb763e12c6a5def866271ebb2397319622d1165da2a')
 
 prepare() {
   cd "${srcdir}"
